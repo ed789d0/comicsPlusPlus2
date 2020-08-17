@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Comics++",
+  "version": "2.2",
+
+  "description": "Tweaks GoComics.com to make the interface a little better.",
+
+  "icons": {
+    "48": "icons/wrenchbox.svg",
+    "96": "icons/wrenchbox.svg"
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*.gocomics.com/*"],
+    "js": ["stuff.js"]
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "comicsplusplus@comics.plusplus"
+    }
+  }
+}
